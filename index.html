@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nintendo Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">
+          <a
+            ><img
+              src="https://i.ibb.co/L5t0kZg/nintendo-2296041-1912000.png"
+              alt="nintendo-2296041-1912000"
+              border="0" /></a
+          >Nintendo Survey Form
+        </h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the gameplay
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>What best describes what kind of player you are?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="casual">Casual</option>
+            <option value="nb">Newbie</option>
+            <option value="moba">Moba player</option>
+            <option value="hardcore">Hardcore player</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Nintendo games to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite franchise of Nintendo?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="mario">Mario</option>
+            <option value="zelda">The Legend of Zelda</option>
+            <option value="pokemon">Pokémon</option>
+            <option value="animalcrossing">Animal Crossing</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which of these games have you played?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/0Z5Lvws/animal-crossing-new-horizons.png"
+                alt="animal-crossing-new-horizons"
+                border="0"
+            /></a>
+            Animal Crossing: New Horizons
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/hs2fVGb/the-legend-of-zelda-breath-of-the-wild.png"
+                alt="the-legend-of-zelda-breath-of-the-wild"
+                border="0" /></a
+            >The Legend of Zelda: Breath of the Wild
+          </label>
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            <a
+              ><img
+                src="https://i.ibb.co/JpqCn1v/super-smash-bros-ultimate.png"
+                alt="super-smash-bros-ultimate"
+                border="0" /></a
+            >Super Smash Bros. Ultimate</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/sqXJNfp/mario-kart-8-deluxe.png"
+                alt="mario-kart-8-deluxe"
+                border="0" /></a
+            >Mario Kart 8</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/K6tzbKq/super-mario-odyssey.png"
+                alt="super-mario-odyssey"
+                border="0" /></a
+            >Super Mario Odyssey</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            <a
+              ><img
+                src="https://i.ibb.co/hCkqPtG/monster-hunter-rise-b1b727abc76c3b8d8e03cbb5b49262a3f56e4a598537430345d016d341f43798.png"
+                alt="monster-hunter-rise-b1b727abc76c3b8d8e03cbb5b49262a3f56e4a598537430345d016d341f43798"
+                border="0"
+            /></a>
+            Monster Hunter Rise</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/N3QFLZx/luigis-mansion-3.png"
+                alt="luigis-mansion-3"
+                border="0" /></a
+            >Luigi's Mansion 3</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/Lt0Jd4w/fire-emblem-three-houses.png"
+                alt="fire-emblem-three-houses"
+                border="0" /></a
+            >Fire Emblem: Three Houses</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/XYycJyX/super-mario-party.png"
+                alt="super-mario-party"
+                border="0" /></a
+            >Super Mario Party</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/MCd1xFN/download.jpg"
+                alt="download"
+                border="0" /></a
+            >Super Mario 3D World + Bowser's Fury</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            /><a
+              ><img
+                src="https://i.ibb.co/Gf60V78/download-1.jpg"
+                alt="download-1"
+                border="0" /></a
+            >Pokémon Sword</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
